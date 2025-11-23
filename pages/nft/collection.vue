@@ -15,7 +15,7 @@
         version: '1',
         imageUrl: metaImage,
         button: {
-          title: 'Check NFT: ' + metaTitle,
+          title: 'Monad NFT: ' + metaTitle,
           action: {
             type: 'launch_miniapp',
             name: $config.public.projectName,
@@ -844,6 +844,7 @@ export default {
         if (this.address) {
           try {
             await axios.get(`/api/endpoint/write/user-nfts-add?nft_address=${this.cAddress}&user_address=${this.address}`);
+            await axios.get(`/api/endpoint/write/add-collection-by-address?nft_address=${this.cAddress}`); // add collection to the API in case it's not in the database yet
           } catch (e) {
             console.error(e);
           }
