@@ -99,7 +99,7 @@ export default defineEventHandler(async (event) => {
           metadata.image.url = imageMatches[0].trim()
         } else {
           const titleWithoutSpaces = metadata.title?.replace(/\s+/g, '+')
-          metadata.image.url = "https://placehold.co/600x400/8e85e6/FFF?text=" + titleWithoutSpaces
+          metadata.image.url = "https://placehold.co/600x400/6E54FF/FFF?text=" + titleWithoutSpaces
         }
       }
     } catch (fetchError: any) {

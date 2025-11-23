@@ -91,8 +91,8 @@ export default defineNuxtConfig({
       expiryUsernames: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       farcasterShareText: 'Check out Iggy Social - A starter template for building Web3 applications with Wagmi and Nuxt!',
       farcasterSplashImageUrl: 'https://gae.iggy.social/img/farcaster/fc-icon.png',
-      farcasterSplashBackgroundColor: '#8e85e6',
-      favicon: '/img/favicon.ico',
+      farcasterSplashBackgroundColor: '#6E54FF',
+      favicon: '/img/favicon.svg',
       fileUploadEnabled: true, // enable/disable file uploads (enable only if external file storage is used, e.g. Arweave)
       fileUploadSizeLimit: 1 * 1024 * 1024, // max file upload size in bytes (1 * 1024 * 1024 = 1 MB)
       fileUploadStorageType: "arweave", // "arweave" (or leave empty for no file uploads)
@@ -119,7 +119,6 @@ export default defineNuxtConfig({
       previewImageNftCreate: '/img/covers/cover-nft-create.png',
       previewImageNftLaunchpad: '/img/covers/cover-nft-launchpad.png',
       previewImagePost: '/img/covers/cover-post.png',
-      previewImagePostNft: '/img/covers/cover-post-nft.png',
       previewImageProfile: '/img/covers/cover-profile.png',
       previewImageStake: '/img/covers/cover-stake.png',
       projectMetadataTitle: 'Iggy Social',

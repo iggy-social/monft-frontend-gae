@@ -2,12 +2,12 @@
 @import "./light.css";
 
 :root {
-  --bs-primary: #8e85e6 !important; /* TODO: Replace is with your primary color */
+  --bs-primary: #6E54FF !important; /* TODO: Replace is with your primary color */
   --bs-primary-rgb: 142, 133, 230; /* TODO: This should be an RGB version of --bs-primary hex color */
-  --bs-btn-disabled-border-color: #8e85e6; /* TODO: Replace is with your primary color */
-  --bs-link-color: #8e85e6; /* TODO: Replace is with your primary color */
-  --bs-nav-pills-link-active-bg: #8e85e6 !important; /* TODO: Replace is with your primary color */
-  --bs-link-color: #8e85e6; /* TODO: Replace is with your primary color */
+  --bs-btn-disabled-border-color: #6E54FF; /* TODO: Replace is with your primary color */
+  --bs-link-color: #6E54FF; /* TODO: Replace is with your primary color */
+  --bs-nav-pills-link-active-bg: #6E54FF !important; /* TODO: Replace is with your primary color */
+  --bs-link-color: #6E54FF; /* TODO: Replace is with your primary color */
   --bs-link-hover-color: #6f42c1; /* TODO: A slightly darker shade of the primary color */
   --bs-blue: #1d3b53;
   --bs-indigo: #6610f2;
@@ -367,7 +367,7 @@ a:hover {
 /* @todo Add your custom navbar background color */
 /*
 .navbar-bg-custom {
-  background: linear-gradient(40deg,#ff6ec4,#8e85e6);
+  background: linear-gradient(40deg,#ff6ec4,#6E54FF);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
