@@ -108,7 +108,7 @@ export default defineNuxtConfig({
       lpTokenDecimals: 18,
       marketplaceNftCollectionBaseUrl: 'https://opensea.io/collections/', // url (append nft address to it)
       newsletterLink: '',
-      nftDefaultRatio: 1, // default ratio for the NFT price bonding curve
+      nftDefaultRatio: 420, // default ratio for the NFT price bonding curve
       nftLaunchpadBondingAddress: '0xe9C63616387bbd4902a10671619534eef04e63f1', // NFT launchpad with bonding curve contract address
       nftLaunchpadFetchItems: 4, // number of NFTs to fetch from blockchain
       previewImage: '/img/covers/cover.png',
