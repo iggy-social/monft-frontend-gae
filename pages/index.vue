@@ -1,14 +1,17 @@
 <template>
-  <ChatFeed class="mt-1" :hideCommentBox="false" :chatContext="$config.public.chat.contexts.general" />
 </template>
 
 <script>
-import ChatFeed from '@/components/chat/ChatFeed.vue'
-
 export default {
   name: 'index',
-  components: {
-    ChatFeed,
+  mounted() {
+    const curComp = window.localStorage.getItem("currentNftPage");
+
+    if (!curComp) {
+      return this.$router.push({ path: '/nft' });
+    } else {
+      return this.$router.push({ path: curComp });
+    }
   },
 }
 </script>

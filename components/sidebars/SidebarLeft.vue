@@ -39,7 +39,7 @@
           <!-- Pills -->
           <ul class="nav nav-pills flex-column">
 
-              <!-- Chat -->
+              <!-- Chat 
               <ul class="list-group">
                 <NuxtLink
                   to="/"
@@ -74,8 +74,61 @@
               </ul>
 
               <hr />
+              -->
+              <!-- New NFTs -->
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path == '/nft' ? 'active' : ''" aria-current="page" to="/nft">
+                  <i class="bi bi-stars me-1"></i> New NFTs
+                </NuxtLink>
+              </li>
 
-              <!-- NFT Launchpad -->
+              <!-- Featured NFTs -->
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path == '/nft/featured' ? 'active' : ''" aria-current="page" to="/nft/featured">
+                  <i class="bi bi-patch-check me-1"></i> Featured NFTs
+                </NuxtLink>
+              </li>
+
+              <!-- Most Traded NFTs -->
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path.startsWith('/nft/most-traded') ? 'active' : ''" aria-current="page" to="/nft/most-traded">
+                  <i class="bi bi-arrow-left-right me-1"></i> Most Traded NFTs
+                </NuxtLink>
+              </li>
+
+              <!-- Top-Priced NFTs -->
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path.startsWith('/nft/highest-priced') ? 'active' : ''" aria-current="page" to="/nft/highest-priced">
+                  <i class="bi bi-coin me-1"></i> Top-Priced NFTs
+                </NuxtLink>
+              </li>
+
+              <!-- Most Holders NFTs -->
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path.startsWith('/nft/most-holders') ? 'active' : ''" aria-current="page" to="/nft/most-holders">
+                  <i class="bi bi-gem me-1"></i> Most Holders NFTs
+                </NuxtLink>
+              </li>
+
+              <!-- Music NFTs 
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path == '/nft/music-nfts' ? 'active' : ''" aria-current="page" to="/nft/music-nfts">
+                  <i class="bi bi-music-note-beamed me-1"></i> Music NFTs
+                </NuxtLink>
+              </li>
+              -->
+
+              <!-- Video NFTs 
+              <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.public.nftLaunchpadBondingAddress && $config.public.showFeatures.nftLaunchpad">
+                <NuxtLink class="nav-link" :class="$route.path == '/nft/video-nfts' ? 'active' : ''" aria-current="page" to="/nft/video-nfts">
+                  <i class="bi bi-camera-reels me-1"></i> Video NFTs
+                </NuxtLink>
+              </li>
+              -->
+
+              <hr />
+
+              <!-- NFT Launchpad 
               <li
                 class="nav-item p-1"
                 @click="closeLeftSidebar"
@@ -88,6 +141,19 @@
                   to="/nft"
                 >
                   <i class="bi bi-rocket-takeoff me-2"></i> NFT Launchpad
+                </NuxtLink>
+              </li>
+              -->
+
+              <!-- Chat -->
+              <li class="nav-item p-1" @click="closeLeftSidebar">
+                <NuxtLink
+                  class="nav-link"
+                  :class="$route.path.startsWith('/chat') ? 'active' : ''"
+                  aria-current="page"
+                  to="/chat"
+                >
+                  <i class="bi bi-chat me-2"></i> Chat
                 </NuxtLink>
               </li>
 
