@@ -1,0 +1,46 @@
+{
+  "name": "monft-frontend-gae",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "predev": "node check-node-version.js",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt build && nuxt prepare",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "latest",
+    "@farcaster/miniapp-wagmi-connector": "latest",
+    "@google-cloud/datastore": "^9.2.1",
+    "@google-cloud/tasks": "^6.2.0",
+    "@openzeppelin/merkle-tree": "^1.0.8",
+    "@popperjs/core": "^2.11.8",
+    "@tanstack/vue-query": ">=5.83.0",
+    "@types/dompurify": "^3.0.5",
+    "@vueuse/core": "^13.6.0",
+    "@wagmi/vue": "latest",
+    "arweave": "^1.15.7",
+    "axios": "^1.11.0",
+    "dompurify": "^3.2.6",
+    "emoji-mart-vue-fast": "^15.0.4",
+    "imagekit": "^6.0.0",
+    "imagekit-javascript": "^4.0.1",
+    "nuxt": "^3.19.1",
+    "viem": "latest",
+    "vue": "^3.5.17",
+    "vue-toastification": "next"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "overrides": {
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "semver": "^7.7.2"
+  }
+}
