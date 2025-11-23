@@ -1,6 +1,8 @@
-# Iggy Social Frontent (Nuxt) on Google App Engine (GAE)
+# MONFT Frontent (Nuxt) on Google App Engine (GAE)
 
-Iggy Social starter template which uses the following stack:
+No.1 platform for launching and trading liquid NFTs on Monad.
+
+Stack:
 
 - Google App Engine (GAE)
 - Nuxt

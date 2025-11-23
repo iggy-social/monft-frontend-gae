@@ -24,15 +24,15 @@ export default defineNuxtConfig({
           name: 'fc:miniapp',
           content: JSON.stringify({
             version: "1",
-            imageUrl: "https://gae.iggy.social/img/farcaster/fc-image.png",
+            imageUrl: "https://monft.xyz/img/farcaster/fc-image.png",
             button: {
-              title: "Open Iggy Social",
+              title: "Open MONFT",
               action: {
                 type: "launch_frame",
-                name: "Iggy Social",
-                url: "https://gae.iggy.social",
-                splashImageUrl: "https://gae.iggy.social/img/farcaster/fc-icon.png",
-                splashBackgroundColor: "#002b36"
+                name: "MONFT",
+                url: "https://monft.xyz",
+                splashImageUrl: "https://monft.xyz/img/farcaster/fc-icon.png",
+                splashBackgroundColor: "#6E54FF"
               }
             }
           })
@@ -64,23 +64,23 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      activityPointsAddress: '0x7058413D002B36486465FF8628bBcCE080e6Af87',
+      activityPointsAddress: '0x1C82d66652fFd02Ff17900539bfB5a02185694F6',
       airdropApAddress: '', // chat token claim for APs
       airdropClaimDomainsAddress: '', // chat token claim for domain holders
       arweaveAddress: process.env.ARWEAVE_ADDRESS,
       arweaveGateway: 'https://arweave.net/',
       arweaveMinBalance: 0.02, // minimum AR balance to upload files
-      blockExplorerBaseUrl: 'https://sepolia.basescan.org',
+      blockExplorerBaseUrl: 'https://testnet.monadscan.com',
       chat: {
         contexts: {
-          general: '0x2843e0b801436409E3e26789217d71a486c6D7dD', // general discussion channel
-          memesImages: '0xde16C1c780f32cF8dB6F6F41a58B2D4e91B86fd3',
-          shill: '0x38E89E57e88fF8bB3Dc995f28a54bE8D99b582C2',
-          nftLaunchpad: '0x6Dd7580ae0B5b764D08a1d40dE348198F54Bd6BF', // comments context
+          general: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766', // general discussion channel
+          memesImages: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766',
+          shill: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766',
+          nftLaunchpad: '0x8f594531ae52618265d2BddF25A2d1B656151972', // comments context
         },
         storage: 'arweave', // storage type: 'arweave' or 'ipfs'
       },
-      chatTokenAddress: '0x249f1172Ebd8686386a5C0Ee704378B85acD0627', // chat token address
+      chatTokenAddress: '', // chat token address
       chatTokenDecimals: 18,
       chatTokenImage: 'https://www.pngall.com/wp-content/uploads/8/Gold-Dollar-Coin-PNG-180x180.png', // chat token image
       chatTokenSymbol: 'DEMO', // chat token symbol or name
@@ -89,8 +89,8 @@ export default defineNuxtConfig({
       expiryMods: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       expiryPfps: 1000 * 60 * 60 * 24 * 10, // must be in milliseconds (0 means no expiration)
       expiryUsernames: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
-      farcasterShareText: 'Check out Iggy Social - A starter template for building Web3 applications with Wagmi and Nuxt!',
-      farcasterSplashImageUrl: 'https://gae.iggy.social/img/farcaster/fc-icon.png',
+      farcasterShareText: 'No.1 platform for launching and trading liquid NFTs on Monad. Check it out here 👇',
+      farcasterSplashImageUrl: 'https://monft.xyz/img/farcaster/fc-icon.png',
       farcasterSplashBackgroundColor: '#6E54FF',
       favicon: '/img/favicon.svg',
       fileUploadEnabled: true, // enable/disable file uploads (enable only if external file storage is used, e.g. Arweave)
@@ -98,7 +98,7 @@ export default defineNuxtConfig({
       fileUploadStorageType: "arweave", // "arweave" (or leave empty for no file uploads)
       fileUploadTokenService: process.env.FILE_UPLOAD_SERVICE || 'server', // "netlify", "server", or "vercel" (or leave empty for no file uploads)
       getPostsLimit: 10, // number of posts to fetch
-      governanceUrl: 'https://snapshot.org/#/sgbchat.eth', // governance url (snapshot, Tally, etc.)
+      governanceUrl: '', // governance url (snapshot, Tally, etc.)
       ipfsGateway: 'https://ipfs.io/ipfs/',
       ipfsGateway2: 'https://cloudflare-ipfs.com/ipfs/',
       ipfsGateway3: 'https://ipfs.filebase.io/ipfs/',
@@ -106,10 +106,10 @@ export default defineNuxtConfig({
       lpTokenAddress: '', // liquidity pool token (token to stake in the staking contract)
       lpTokenSymbol: 'LP tokens', // LP token symbol
       lpTokenDecimals: 18,
-      marketplaceNftCollectionBaseUrl: 'https://testnets.opensea.io/assets/holesky/', // url (append nft address to it)
-      newsletterLink: 'https://paragraph.xyz/@iggy?modal=subscribe',
+      marketplaceNftCollectionBaseUrl: 'https://opensea.io/collections/', // url (append nft address to it)
+      newsletterLink: '',
       nftDefaultRatio: 1, // default ratio for the NFT price bonding curve
-      nftLaunchpadBondingAddress: '0xBdaba8106cdC29420c9A7Bb31066ED79c9b6Be74', // NFT launchpad with bonding curve contract address
+      nftLaunchpadBondingAddress: '0xe9C63616387bbd4902a10671619534eef04e63f1', // NFT launchpad with bonding curve contract address
       nftLaunchpadFetchItems: 4, // number of NFTs to fetch from blockchain
       previewImage: '/img/covers/cover.png',
       previewImageAirdrop: '/img/covers/cover-airdrop.png',
@@ -121,14 +121,14 @@ export default defineNuxtConfig({
       previewImagePost: '/img/covers/cover-post.png',
       previewImageProfile: '/img/covers/cover-profile.png',
       previewImageStake: '/img/covers/cover-stake.png',
-      projectMetadataTitle: 'Iggy Social',
-      projectName: 'Iggy Demo',
-      projectDescription: 'A starter template for Wagmi Nuxt projects',
-      projectTwitter: '@example',
-      projectUrl: 'https://gae.iggy.social',
-      punkMinterAddress: '', // punk domain minter contract address
-      punkNumberOfPrices: 1, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
-      punkTldAddress: '0xD9FF69E89D9B6a7f18a46e9151c48BfBF687B7da', // punk domain TLD address
+      projectMetadataTitle: 'MONFT',
+      projectName: 'MONFT',
+      projectDescription: 'No.1 platform for launching and trading liquid NFTs on Monad.',
+      projectTwitter: '@iggysocial',
+      projectUrl: 'https://monft.xyz',
+      punkMinterAddress: '0xd1b328B5Ff4bF06ef9c6E7CDacDa69be5F522649', // punk domain minter contract address
+      punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
+      punkTldAddress: '0xDe7390cD47869458ACa6cfB9Ef98962F0500F94C', // punk domain TLD address
       showFeatures: {
         // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
         activityPoints: true,
@@ -143,15 +143,15 @@ export default defineNuxtConfig({
       sidebarLeftSticky: false, // make the left sidebar sticky (always visible)
       stakingContractAddress: '', // this is also the stake/gov token address
       stakeTokenDecimals: 18,
-      stakeTokenSymbol: 'IGT', // stake token symbol (governance token symbol)
-      supportedChainId: 84532,
+      stakeTokenSymbol: '', // stake token symbol (governance token symbol)
+      supportedChainId: 10143,
       swapPriceImpactMaxBps: 1000, // max price impact in bips (1 bps = 0.01%, 1000bps = 10%) for the swap function
       swapRouterAddress: '', // iggy swap router contract address
       tenorApiKey: process.env.TENOR_KEY || '',
-      tldName: '.demo',
+      tldName: '.monft',
       tokenAddress: undefined, // leave undefined if it's a native token of the chain
       tokenDecimals: 18,
-      tokenSymbol: 'ETH',
+      tokenSymbol: 'MON',
     }
   },
   compatibilityDate: '2025-06-21',

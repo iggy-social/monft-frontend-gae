@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-bg-custom">
     <div class="container-fluid mx-3">
       <NuxtLink class="navbar-brand" to="/">
-        <img src="/img/logo.svg" alt="Iggy Social logo" height="45" />
+        <img src="/img/logo.svg" alt="MONFT logo" height="45" />
       </NuxtLink>
 
       <ul class="navbar-nav justify-content-end flex-grow-1">

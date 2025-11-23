@@ -1,39 +1,39 @@
 import { farcasterMiniApp } from '@farcaster/miniapp-wagmi-connector'
 import { http, cookieStorage, createConfig, createStorage } from '@wagmi/vue'
 import { injected, metaMask, walletConnect } from '@wagmi/vue/connectors'
-import { baseSepolia } from '@wagmi/vue/chains'
+import { monadTestnet } from '@wagmi/vue/chains'
 import type { Chain } from 'viem'
 
-export const customBaseSepolia: Chain = {
-  id: 84532,
-  name: 'Base Sepolia',
+export const customChain: Chain = {
+  id: 10143,
+  name: 'Monad Testnet',
   nativeCurrency: {
-    name: 'Ether',
-    symbol: 'ETH',
+    name: 'Monad',
+    symbol: 'MON',
     decimals: 18,
   },
   rpcUrls: {
     default: {
       http: [
-        'https://sepolia.base.org',
-        'https://base-sepolia.drpc.org',
-        'https://base-sepolia.therpc.io',
-        'https://base-sepolia.gateway.tenderly.co',
+        'https://testnet-rpc.monad.xyz',
+        'https://rpc.ankr.com/monad_testnet',
+        'https://rpc-testnet.monadinfra.com',
+        'https://monad-testnet.drpc.org',
       ],
     },
   },
   blockExplorers: {
     default: {
-      name: 'BaseScan',
-      url: 'https://sepolia.basescan.org',
-      apiUrl: 'https://api-sepolia.basescan.org/api',
+      name: 'MonadScan',
+      url: 'https://testnet.monadscan.com',
+      apiUrl: 'https://api.etherscan.io/v2/api',
     },
   },
   testnet: true,
 }
 
 export const config = createConfig({
-  chains: [baseSepolia],
+  chains: [customChain],
   connectors: [
     injected(),
     farcasterMiniApp(),
@@ -49,7 +49,7 @@ export const config = createConfig({
   }),
   ssr: true,
   transports: {
-    [baseSepolia.id]: http(),
+    [customChain.id]: http(),
   },
 })
 

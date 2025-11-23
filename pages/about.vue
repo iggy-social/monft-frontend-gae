@@ -25,20 +25,26 @@
         <i @click="$router.back()" class="bi bi-arrow-left-circle cursor-pointer"></i>
       </p>
 
-      <h3 class="mb-3 mt-3">Web3 Social is here.</h3>
+      <h3 class="mb-3 mt-3">Liquid NFTs on Monad</h3>
 
       <p class="text-break mt-3">
-        Iggy Social Demo is showcase of an open-source template that anyone can use to build their own web3 social app.
+        MONFT is a platform where anyone can launch their own NFT collection and trade NFTs on Monad.
       </p>
 
       <p class="text-break mt-3">
-        Web3 Social is a place where social media is fully decentralized, permissionless and all the data is owned by
-        users. The way it should be.
+        All NFTs on MONFT are always liquid because they have a built-in bonding curve. This means you can
+        always sell your NFT back to the bonding curve at any time, ensuring continuous liquidity for all
+        collections.
       </p>
 
       <p class="text-break mt-3">
-        Let's leave the old world of corporation-controlled social media behind us and move towards a decentralized
-        future. We promise, it's going to be a lot of fun!
+        The only exception is when there's only 1 holder remaining, as each NFT must have at least 1 holder at
+        all times.
+      </p>
+
+      <p class="text-break mt-3">
+        MONFT is available both as a standalone web app on monft.xyz, as well as a mini app on Farcaster,
+        giving you multiple ways to access and use the platform.
       </p>
 
       <p class="text-break mt-3">
@@ -50,29 +56,15 @@
       <h5>Useful links</h5>
 
       <ul>
-        <li><a href="https://github.com/iggy-social" target="_blank">Iggy Social GitHub</a></li>
-        <li><a href="https://github.com/punk-domains" target="_blank">Punk Domains GitHub</a></li>
-        <li><a href="https://discord.gg/8dSrwrAQeu" target="_blank">Discord</a></li>
-      </ul>
-
-      <h5>Tech stack</h5>
-
-      <p class="text-break mt-3">
-        This chat is built on top of various decentralized and open source technologies, such as:
-      </p>
-
-      <ul>
-        <li><a href="https://arweave.org/" target="_blank">Arweave</a></li>
-        <li><a href="https://punk.domains/" target="_blank">Punk Domains</a></li>
-        <li><a href="https://iggy.social/" target="_blank">Iggy Social</a></li>
-        <li>... and others.</li>
+        <li><a href="https://github.com/iggy-social/monft-contracts" target="_blank">MONFT Contracts GitHub</a></li>
+        <li><a href="https://github.com/iggy-social/monft-frontend-gae" target="_blank">MONFT Frontend GitHub</a></li>
       </ul>
 
       <hr />
 
       <h5>Feedback</h5>
 
-      <p class="text-break mt-3">Feel free to post ideas, features suggestions, rants directly in this chat.</p>
+      <p class="text-break mt-3">Feel free to post ideas, features suggestions, rants directly in the MONFT chat.</p>
     </div>
   </div>
 </template>
