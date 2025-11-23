@@ -1,7 +1,35 @@
-import { createPublicClient, http } from 'viem'
-import { baseSepolia } from '@wagmi/vue/chains'
+import { createPublicClient, http, type Chain } from 'viem'
+import { monadTestnet } from '@wagmi/vue/chains'
 
-const addressNftDirectory = "0x498e0e6B245898c5E2dD0299d0456a8928F58ECC"; // TODO: enter the address NFT directory
+const customChain: Chain = {
+  id: 10143,
+  name: 'Monad Testnet',
+  nativeCurrency: {
+    name: 'Monad',
+    symbol: 'MON',
+    decimals: 18,
+  },
+  rpcUrls: {
+    default: {
+      http: [
+        'https://testnet-rpc.monad.xyz',
+        'https://rpc.ankr.com/monad_testnet',
+        'https://rpc-testnet.monadinfra.com',
+        'https://monad-testnet.drpc.org',
+      ],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'MonadScan',
+      url: 'https://testnet.monadscan.com',
+      apiUrl: 'https://api.etherscan.io/v2/api',
+    },
+  },
+  testnet: true,
+}
+
+const addressNftDirectory = "0xe5970402b86870CC80246e168E6192F0BB993C43"; // TODO: enter the NFT directory contract address
 const kindFeatured = "Featured";
 const kindMusicNfts = "MusicNfts";
 const kindNftCollection = "NftCollection";
@@ -10,9 +38,9 @@ const kindTradingVolumeWeekly = "TradingVolumeWeekly";
 const kindUserNfts = "UserNfts";
 const kindVideoNfts = "VideoNfts";
 const maxLimit = 16;
-const nativeTokenCoingeckoId = "ethereum"; // TODO: change to the native token of the chain
-const projectId = "monft-frontend-gae"; // TODO: change to your project ID
-const selectedChain = baseSepolia; // TODO: change to the chain you are using
+const nativeTokenCoingeckoId = "monad"; // TODO: change to the native token of the chain
+const projectId = "monft-frontend"; // TODO: change to your project ID
+const selectedChain = customChain; // TODO: change to the chain you are using
 
 export function getAddressNftDirectory() {
   return addressNftDirectory;

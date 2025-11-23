@@ -26,12 +26,6 @@ Set the supported network in the wagmi.ts file in the root folder. It should be 
 
 On localhost create a `.env` file by duplicating or renaming the `.env.example` file. Enter the needed variable values.
 
-## GAE env vars
-
-Go to Datastore on the Cloud Console and create the `EnvVar` kind. In the `EnvVar` kind create a new entity with key title `envkey` and text `FILE_UPLOAD_SERVICE`, and value title `envval` with the value of `server`.
-
-Also create other env vars, as listed in the `.env.example` file.
-
 ## Server settings
 
 Go to `/server/utils/project.ts` and edit the values there.
@@ -46,7 +40,7 @@ Go to `/server/utils/project.ts` and edit the values there.
   - Cloud Tasks API
   - App Engine Admin API
   - Cloud Scheduler API
-  - Secret Manager API 
+  - Secret Manager API
 - Go to IAM:
   - Check the `Include Google-provided role grants` checkbox
   - Then give the `Cloud Scheduler Admin` role to:
@@ -57,7 +51,7 @@ Go to `/server/utils/project.ts` and edit the values there.
   - Click on "Create host connection" and connect your GitHub (org or personal account)
   - Click on "Link repositories" and select your repo on GitHub
 - Open the Cloud Build Permissions page:
-  - choose the service account **without** numbers, and set it as **preferred service account**
+  - choose the service account **without** numbers, and set it as **pre-selected for new triggers**
   - set the status of the App Engine Admin role to Enabled 
   - set the status of the Service Account User role to Enabled
 - Then go to the "Triggers" page:
@@ -70,6 +64,12 @@ Go to `/server/utils/project.ts` and edit the values there.
   - Create the `default` queue
   - Make sure the region is the same as you selected for your GAE app (e.g. europe-west1)
   - Leave everything else the default
+
+## GAE env vars
+
+Go to Datastore on the Cloud Console and create the `EnvVar` kind. In the `EnvVar` kind create a new entity with key title `envkey` and text `FILE_UPLOAD_SERVICE`, and value title `envval` with the value of `server`.
+
+Also create other env vars, as listed in the `.env.example` file.
 
 ## Farcaster Mini App setup
 

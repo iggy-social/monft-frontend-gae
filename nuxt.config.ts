@@ -121,7 +121,7 @@ export default defineNuxtConfig({
       previewImagePost: '/img/covers/cover-post.png',
       previewImageProfile: '/img/covers/cover-profile.png',
       previewImageStake: '/img/covers/cover-stake.png',
-      projectMetadataTitle: 'MONFT',
+      projectMetadataTitle: 'MONFT - Liquid NFTs on Monad',
       projectName: 'MONFT',
       projectDescription: 'No.1 platform for launching and trading liquid NFTs on Monad.',
       projectTwitter: '@iggysocial',
