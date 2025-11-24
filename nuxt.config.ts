@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       chatTokenDecimals: 18,
       chatTokenImage: 'https://www.pngall.com/wp-content/uploads/8/Gold-Dollar-Coin-PNG-180x180.png', // chat token image
       chatTokenSymbol: 'DEMO', // chat token symbol or name
-      domainRequiredToPost: true,
+      domainRequiredToPost: false,
       expiryCollections: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       expiryMods: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       expiryPfps: 1000 * 60 * 60 * 24 * 10, // must be in milliseconds (0 means no expiration)
