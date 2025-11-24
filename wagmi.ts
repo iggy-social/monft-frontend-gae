@@ -1,12 +1,11 @@
 import { farcasterMiniApp } from '@farcaster/miniapp-wagmi-connector'
 import { http, cookieStorage, createConfig, createStorage } from '@wagmi/vue'
 import { injected, metaMask, walletConnect } from '@wagmi/vue/connectors'
-import { monadTestnet } from '@wagmi/vue/chains'
 import type { Chain } from 'viem'
 
 export const customChain: Chain = {
-  id: 10143,
-  name: 'Monad Testnet',
+  id: 143,
+  name: 'Monad Mainnet',
   nativeCurrency: {
     name: 'Monad',
     symbol: 'MON',
@@ -15,21 +14,21 @@ export const customChain: Chain = {
   rpcUrls: {
     default: {
       http: [
-        'https://testnet-rpc.monad.xyz',
-        'https://rpc.ankr.com/monad_testnet',
-        'https://rpc-testnet.monadinfra.com',
-        'https://monad-testnet.drpc.org',
+        'https://rpc.monad.xyz',
+        'https://rpc1.monad.xyz',
+        'https://rpc3.monad.xyz',
+        'https://rpc-mainnet.monadinfra.com',
       ],
     },
   },
   blockExplorers: {
     default: {
       name: 'MonadScan',
-      url: 'https://testnet.monadscan.com',
+      url: 'https://monadscan.com',
       apiUrl: 'https://api.etherscan.io/v2/api',
     },
   },
-  testnet: true,
+  testnet: false,
 }
 
 export const config = createConfig({

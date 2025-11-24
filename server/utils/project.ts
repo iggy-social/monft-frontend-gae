@@ -2,8 +2,8 @@ import { createPublicClient, http, type Chain } from 'viem'
 import { monadTestnet } from '@wagmi/vue/chains'
 
 const customChain: Chain = {
-  id: 10143,
-  name: 'Monad Testnet',
+  id: 143,
+  name: 'Monad Mainnet',
   nativeCurrency: {
     name: 'Monad',
     symbol: 'MON',
@@ -12,24 +12,24 @@ const customChain: Chain = {
   rpcUrls: {
     default: {
       http: [
-        'https://testnet-rpc.monad.xyz',
-        'https://rpc.ankr.com/monad_testnet',
-        'https://rpc-testnet.monadinfra.com',
-        'https://monad-testnet.drpc.org',
+        'https://rpc.monad.xyz',
+        'https://rpc1.monad.xyz',
+        'https://rpc3.monad.xyz',
+        'https://rpc-mainnet.monadinfra.com',
       ],
     },
   },
   blockExplorers: {
     default: {
       name: 'MonadScan',
-      url: 'https://testnet.monadscan.com',
+      url: 'https://monadscan.com',
       apiUrl: 'https://api.etherscan.io/v2/api',
     },
   },
-  testnet: true,
+  testnet: false,
 }
 
-const addressNftDirectory = "0xe5970402b86870CC80246e168E6192F0BB993C43"; // TODO: enter the NFT directory contract address
+const addressNftDirectory = "0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766"; // TODO: enter the NFT directory contract address
 const kindFeatured = "Featured";
 const kindMusicNfts = "MusicNfts";
 const kindNftCollection = "NftCollection";

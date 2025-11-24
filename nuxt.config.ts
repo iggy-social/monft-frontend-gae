@@ -64,19 +64,19 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      activityPointsAddress: '0x1C82d66652fFd02Ff17900539bfB5a02185694F6',
+      activityPointsAddress: '0x9DB741d9D906cf6e9d1B70A94e779dD7C719b2EF',
       airdropApAddress: '', // chat token claim for APs
       airdropClaimDomainsAddress: '', // chat token claim for domain holders
       arweaveAddress: process.env.ARWEAVE_ADDRESS,
       arweaveGateway: 'https://arweave.net/',
       arweaveMinBalance: 0.02, // minimum AR balance to upload files
-      blockExplorerBaseUrl: 'https://testnet.monadscan.com',
+      blockExplorerBaseUrl: 'https://monadscan.com',
       chat: {
         contexts: {
-          general: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766', // general discussion channel
-          memesImages: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766',
-          shill: '0x64a2489c6ECd8535BCC8E57DbB88ceB10b345766',
-          nftLaunchpad: '0x8f594531ae52618265d2BddF25A2d1B656151972', // comments context
+          general: '0x4Bc9611b5f324173e7Ae7AC5Eb6487BC98950103', // general discussion channel
+          memesImages: '0x4Bc9611b5f324173e7Ae7AC5Eb6487BC98950103',
+          shill: '0x4Bc9611b5f324173e7Ae7AC5Eb6487BC98950103',
+          nftLaunchpad: '0xD2aD91025b4Fe67670580751d27DC4Fc3a8F81CB', // comments context
         },
         storage: 'arweave', // storage type: 'arweave' or 'ipfs'
       },
@@ -109,7 +109,7 @@ export default defineNuxtConfig({
       marketplaceNftCollectionBaseUrl: 'https://opensea.io/collections/', // url (append nft address to it)
       newsletterLink: '',
       nftDefaultRatio: 420, // default ratio for the NFT price bonding curve
-      nftLaunchpadBondingAddress: '0xe9C63616387bbd4902a10671619534eef04e63f1', // NFT launchpad with bonding curve contract address
+      nftLaunchpadBondingAddress: '0x8f594531ae52618265d2BddF25A2d1B656151972', // NFT launchpad with bonding curve contract address
       nftLaunchpadFetchItems: 4, // number of NFTs to fetch from blockchain
       previewImage: '/img/covers/cover.png',
       previewImageAirdrop: '/img/covers/cover-airdrop.png',
@@ -126,9 +126,9 @@ export default defineNuxtConfig({
       projectDescription: 'No.1 platform for launching and trading liquid NFTs on Monad.',
       projectTwitter: '@iggysocial',
       projectUrl: 'https://monft.xyz',
-      punkMinterAddress: '0xd1b328B5Ff4bF06ef9c6E7CDacDa69be5F522649', // punk domain minter contract address
+      punkMinterAddress: '0x7D5561394Abb16aa400FB2E2543499f5fd9a23cF', // punk domain minter contract address
       punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
-      punkTldAddress: '0xDe7390cD47869458ACa6cfB9Ef98962F0500F94C', // punk domain TLD address
+      punkTldAddress: '0x6aaFe10424C5CF9734cAF9d251aE339c45d251E2', // punk domain TLD address
       showFeatures: {
         // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
         activityPoints: true,
@@ -144,7 +144,7 @@ export default defineNuxtConfig({
       stakingContractAddress: '', // this is also the stake/gov token address
       stakeTokenDecimals: 18,
       stakeTokenSymbol: '', // stake token symbol (governance token symbol)
-      supportedChainId: 10143,
+      supportedChainId: 143,
       swapPriceImpactMaxBps: 1000, // max price impact in bips (1 bps = 0.01%, 1000bps = 10%) for the swap function
       swapRouterAddress: '', // iggy swap router contract address
       tenorApiKey: process.env.TENOR_KEY || '',

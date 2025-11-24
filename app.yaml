@@ -1,6 +1,7 @@
 runtime: nodejs22
 
 automatic_scaling:
+  min_instances: 1
   max_instances: 4
   max_idle_instances: 4
   target_cpu_utilization: 0.92
