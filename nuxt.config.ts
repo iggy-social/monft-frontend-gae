@@ -106,7 +106,7 @@ export default defineNuxtConfig({
       lpTokenAddress: '', // liquidity pool token (token to stake in the staking contract)
       lpTokenSymbol: 'LP tokens', // LP token symbol
       lpTokenDecimals: 18,
-      marketplaceNftCollectionBaseUrl: 'https://opensea.io/collections/', // url (append nft address to it)
+      marketplaceNftCollectionBaseUrl: 'https://opensea.io/item/monad/', // url (append nft address to it)
       newsletterLink: '',
       nftDefaultRatio: 420, // default ratio for the NFT price bonding curve
       nftLaunchpadBondingAddress: '0x8f594531ae52618265d2BddF25A2d1B656151972', // NFT launchpad with bonding curve contract address
