@@ -31,6 +31,7 @@
     "imagekit": "^6.0.0",
     "imagekit-javascript": "^4.0.1",
     "nuxt": "^3.20.1",
+    "ox": "^0.4.4",
     "viem": "latest",
     "vue-toastification": "next"
   },
